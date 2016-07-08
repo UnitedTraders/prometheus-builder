@@ -1,0 +1,5 @@
+- hosts: all 
+  become: no 
+  tasks:
+    - include: tasks/install_dev_env.yml
+    - include: tasks/build_rpms.yml

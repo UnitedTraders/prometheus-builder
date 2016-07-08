@@ -1,0 +1,10 @@
+---
+- name: build and upload rpm package to bintray
+  become: yes
+  command: make deploy-bintray
+  environment:
+    REPOSITORY: "{{ repository_path }}"
+    CREDENTIALS: "{{ bintray_credentials }}"
+  args:
+    chdir: prometheus-rpm/{{ item }}
+  tags: make 

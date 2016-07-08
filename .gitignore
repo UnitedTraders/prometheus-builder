@@ -1,0 +1,8 @@
+.vagrant/
+.vault-pass
+.idea
+.DS_Store
+./deploy_app.sh
+Vagrantfile
+/.project
+*.retry

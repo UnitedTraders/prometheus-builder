@@ -1,0 +1,9 @@
+---
+- name: install development tools 
+  yum: name="{{ item }}" state=present
+  become: yes 
+  with_items:
+    - rpm-build
+    - git 
+    - wget
+    - maven

@@ -1,0 +1,12 @@
+---
+- name: clone fresh prometheus-rpm
+  git: repo=git://github.com/UnitedTraders/prometheus-rpm.git dest=prometheus-rpm
+  tags: make
+
+- name: build packages
+  include: build_package.yml
+  with_items:
+    - "prometheus"
+    - "node_exporter"
+    - "alertmanager"
+    - "jmx_exporter"
