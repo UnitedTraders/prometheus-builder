@@ -2,11 +2,11 @@
 Ansible scripts to build prometheus RPMs in a clean virtualbox environment. Built RPMs are uploaded into bintray public repository.
 
 ## Usage
-Bintray howto - go to https://bintray.com/
+Bintray manuals with screenshots if needed: - go to https://bintray.com/docs/usermanual/
 
 1) Create repository, for example, "prometheus" via web interface at your organization
 
-2) Create packages via web interface (if not yet):
+2) Create packages via web interface (if not yet) with names:
  - prometheus
  - alertmanager
  - node-exporter
@@ -55,3 +55,5 @@ vagrant up
 ~~~
 vagrant destroy
 ~~~
+
+12) Optionally: GPG sign your packets :closed_lock_with_key: via bintray web interface
