@@ -4,7 +4,7 @@ Ansible scripts to build prometheus RPMs in a clean virtualbox environment. Buil
 ## Usage
 Bintray manuals with screenshots if needed: - go to https://bintray.com/docs/usermanual/
 
-1) Create repository, for example, "prometheus" via web interface at your organization
+1) Create repository, for example, "prometheus" via web interface at your organization:
 
 2) Create packages via web interface (if not yet) with names:
  - prometheus
@@ -33,27 +33,29 @@ repository_path: "organization/repository"
 bintray_credentials: "username:0123456789abcdefghijklmnopqrstuv"
 ~~~
 
-5) Check if needed, do as you code: 
+6) Check if needed, do as you code: 
 ~~~
 $ vi Vagrantfile
 $ vi ansible.cfg
 ~~~
-6) Run: 
+7) Run: 
 ~~~
 vagrant up
 ~~~
 
-7) Check uploaded packets at http://bintray.com/ and add them additional info (descripting, avatar)
+8) Check uploaded packets at http://bintray.com/ and add them additional info (descripting, avatar)
 
-8) Find in packets at http://bintray.com/ "Notice: You have 4 unpublished item(s) for this version"
+9) Find in packets at http://bintray.com/ "Notice: You have 4 unpublished item(s) for this version"
 
-9) Click "Publish" button to make packet availablie and wait 5min...6h before it will be available
+10) Click "Publish" button to make packet availablie and wait 5min...6h before it will be available
 
-10) See notice "4 new files will be publicly available shortly"
+11) See notice "4 new files will be publicly available shortly"
 
-11) Save our planet :deciduous_tree: :
+12) Save our planet :deciduous_tree: :
 ~~~
 vagrant destroy
 ~~~
 
-12) Optionally: GPG sign your packets :closed_lock_with_key: via bintray web interface
+13) Optionally: GPG sign your packets :closed_lock_with_key: via bintray web interface
+
+14) Optionally: do new pull-request :octocat:
