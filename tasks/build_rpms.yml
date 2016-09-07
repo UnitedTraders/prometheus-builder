@@ -10,3 +10,4 @@
     - "node_exporter"
     - "alertmanager"
     - "jmx_exporter"
+    - "prometheus_scollector"
